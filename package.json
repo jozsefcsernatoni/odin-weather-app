@@ -1,0 +1,30 @@
+{
+  "name": "odin-to-do-list",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack",
+    "dev": "webpack serve",
+    "deploy": "git subtree push --prefix dist origin gh-pages",
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix --ext .js,.jsx ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "devDependencies": {
+    "css-loader": "^7.1.4",
+    "html-loader": "^5.1.0",
+    "html-webpack-plugin": "^5.6.7",
+    "style-loader": "^4.0.0",
+    "webpack": "^5.106.2",
+    "webpack-cli": "^7.0.2",
+    "webpack-dev-server": "^5.2.4"
+  },
+  "dependencies": {
+    "date-fns": "^4.3.0",
+    "uuid": "^14.0.0"
+  }
+}
