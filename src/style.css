@@ -1,0 +1,24 @@
+body{display: flex;flex-direction: column; margin-left: auto; margin-right: auto;background-color: aliceblue; width: 90%;}
+form,.location{padding-bottom: 10px;}
+.container{display: grid; grid-template-columns: repeat(5,1fr);gap: 10px;}
+.day{background-color: rgb(117 190 218 / 50%);text-align: center; width: calc(100%-10*6px); padding: 15px;
+box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+.day:hover{box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;}
+.dtitle{font-size: large;font-weight: bold;}
+.dicon{display: flex;margin-left: auto;margin-right: auto;height: 6rem; width: auto;}
+.day>*{padding: 6px;}
+.day>*>span{font-weight: bold;}
+.loader {
+  border: 16px solid #f3f3f3; /* Light grey */
+  border-top: 16px solid #3498db; /* Blue */
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
